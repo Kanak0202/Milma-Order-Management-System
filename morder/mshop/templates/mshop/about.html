@@ -1,0 +1,189 @@
+{% extends 'mshop/basic.html' %}
+
+{% block title %} About Us {% endblock %}
+{% block css %}
+body {
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #ddf7fe;
+  }
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+.desc{
+  padding:60px;
+  text-align: centre;
+  color:#011235;
+  font-size: large;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+h1
+{
+  font-size:100px;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+@media screen and (max-width: 1295px){
+  footer {
+    width: 95%;
+}
+}
+img{
+
+width:100%;
+/*height:500px;*/
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+}
+user agent stylesheet
+
+element.style {
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+@media (min-width: 768px)
+body {
+  font-size: 15px;
+}
+
+
+.row-30 {
+margin-bottom: -30px;
+}
+
+
+.justify-content-center {
+justify-content: center !important;
+}
+
+.row {
+display: flex;
+flex-wrap: wrap;
+margin-right: -15px;
+margin-left: -15px;
+padding-left: 60px;
+padding-right: 60px;
+
+}
+
+
+*, *::before, *::after {
+box-sizing: border-box;
+}
+
+
+.col-sm-6{
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+margin :10px 0px 10px;
+
+
+}
+
+.desc{
+padding-top: 1px;
+}
+
+
+.row row-lg row-30{
+margin-top: -65px;
+}
+
+{% endblock %}
+{% block body %}
+{% load static %}
+<img src="{%static '/mshop/Milma2.jpg' %}" alt="Product1">
+
+    <div class="desc">
+        <p><h4 align="center" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"><b>ABOUT MILMA</b></h4></p>
+        <p>Well-known by the popular sobriquet ‘milma’, Kerala Co-operative Milk Marketing Federation (KCMMF) was formed in 1980 as a state adjunct of the National Dairy Programme ‘Operation Flood’. It is a three-tiered organization. The farmer memberships that stood at 45000 during take over from the erstwhile KLD&MM Board during 1983 has grown to over 15.2 lakhs through 3071 milk Co-operatives by March 2022. These primary societies are grouped under three Regional Co-operative Milk Producers’ Unions viz TRCMPU for Thiruvananthapuram region, ERCMPU for Ernakulam region and MRCMPU for Malabar region. At the apex level KCMMF functions from the headquarters at Thiruvananthapuram. From the different units managed directly by KCMMF and the various units under regional unions MILMA produces and distributes pasteurized Vitamin – A enriched milk and various milk-based products as well as mango drink throughout the state. MILMA has been instrumental in achieving the national goal of self-sufficiency in milk production in the state.The goal of KCMMF is "The socio-economic progress of the dairy farmer through procuring, processing and marketing of milk". Still the goal is receding as Kerala enjoys one of the highest ranges of per capita milk consumption. KCMMF is totally content in the realization of this vision which was set before it. KCMMF has achieved the distinction in its performance by close association and bond with National Dairy Development Board, Animal Husbandry Department and Dairy Development Department of the State and Kerala Livestock Development Board.</p>
+    </div>
+
+
+    <div class="row row-lg row-30 justify-content-center">
+      <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" class="col-sm-6 aos-init aos-animate"
+              <!-- Quote Modern-->
+              <article class="quote-modern text-left ">
+                      <div class="heading-3 quote-classic-big-text">
+                              <div class="q"><b>OUR OBJECTIVE</b></div>
+                      </div>
+                      <div class="mt-4">
+                              <p class="themecolorcharcoaltext text-justify"> To channelise marketable surplus milk from the rural areas to urban deficit areas to maximize the returns to the producer and provide quality milk and milk products to the consumers.To carryout activities for promoting Production, Procurement, Processing and Marketing of milk and milk products for economic development of the farming community.To build up a viable dairy industry in the State.To provide constant market and stable price to the dairy farmers for their produce.</p>
+                      </div>
+              </article>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" class="col-sm-6 aos-init">
+              <!-- Quote Modern-->
+              <article class="quote-modern text-left  ">
+                      <div class="heading-3 quote-classic-big-text">
+                              <div class="q"><strong>OUR VISION</strong></div>
+                      </div>
+                      <div class="mt-4">
+                              <p class="themecolorcharcoaltext text-justify">To constantly strive to provide valued consumers with the highest quality milk, milk products and other products with the best standards of service by our passionate and focused work forces using state of the art technology ensuring sustained growth and simultaneously ensuring dairy farmers' delight by better realization of milk price and offering needed service at his/her doorstep.</p>
+                      </div>
+              </article>
+      </div>
+      <div class="col-sm-6 ">
+              <!-- Quote Modern-->
+              <article class="quote-modern text-left ">
+                      <div class="heading-3 quote-classic-big-text">
+                                      <div class="q"><strong>QUALITY</strong></div>
+                              </div>
+                      <div class="mt-4">
+                              <p class="themecolorcharcoaltext text-justify">We, at Milma are committed to produce and market quality milk, milk products and balance cattle feed at the lowest price possible to the satisfaction of customer in our fully automated Plants. To achieve this goal we plan and implement strict quality control management and continual improvement by use of good quality raw materials, strict manufacturing process, and by ensuring hygienic conditions to ensure our customers' satisfaction.</p>
+                      </div>
+              </article>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" class="col-sm-6 aos-init">
+              <!-- Quote Modern-->
+              <article class="quote-modern text-left ">
+                      <div class="heading-3 quote-classic-big-text">
+                                      <div class="q"><strong>MISSION</strong></div>
+                              </div>
+                      <div class="mt-4">
+                              <p class="themecolorcharcoaltext text-left">Our Mission is farmers' prosperity through consumer satisfaction.</p>
+                      </div>
+              </article>
+      </div>
+
+</div>
+
+
+{% endblock %}

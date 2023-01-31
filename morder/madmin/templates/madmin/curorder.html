@@ -1,0 +1,161 @@
+{% extends 'madmin/basic.html' %}
+{% load static %}
+{% block title %} Current Orders {% endblock %}
+{% block css %}
+
+.badge{
+    background-color:#98cbfe;
+}
+
+#footer{
+
+    
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+text-align: center;
+background-color: #343a40;
+
+}
+
+.col-md-3
+{
+display: inline-block;
+margin-left:-4px;
+
+}
+.carousel-indicators .active {
+background-color: blue;
+}
+.col-md-3 img{
+width: 170px;
+height: 160px;
+
+}
+.card{
+display: inline-block;}
+body .carousel-indicator li{
+background-color: blue;
+}
+body .carousel-indicators{
+bottom: -40px;
+}
+.carousel-indicators{
+background-color:#d9d9e9;
+}
+body .carousel-control-prev-icon,
+body .carousel-control-next-icon{
+background-color: blue;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+top: auto;
+bottom: auto;
+padding-top: 174px;
+}
+body .no-padding{
+padding-left: 0,
+padding-right: 0;
+}
+
+table,th,td{
+    border:2px solid black;
+    font-size: 20px;
+    
+}
+td{
+    height:70px;
+    width:350px;
+    padding-left:10px;
+    
+}
+{% endblock %}
+
+{% load static %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="mt-1 mb-3">Current Orders</h1>
+            
+            <table id="allordertable">
+<tr>
+    <th>Q no.</th>
+    <th>Order ID</th>
+    <th>Deliver to</th>
+    <th>Location</th>
+    <th>Items</th>
+    <th>Status</th>
+</tr>
+{% for data in curord %}
+<tr>
+    <td id="qid{{data.order_id}}">1</td>
+    <td class="orderid" id="orderid{{data.order_id}}">{{data.order_id}}</td>
+    <td>{{data.name}}</td>
+    <td>{{data.curlocation}}</td>
+    <td class="items" id="ord{{data.order_id}}">{{data.items_json}}</td>
+    <td style="width:500px;">
+    <form action="" method="post">
+        {% csrf_token %}
+        
+    <input type="radio" id="orderplaced{{data.order_id}}" name="orderstatus_{{data.order_id}}" value="order_placed" checked>
+     <label for="orderplaced">Order Placed</label><br>
+      <input type="radio" id="orderaccepted{{data.order_id}}" name="orderstatus_{{data.order_id}}" value="order_accepted">
+      <label for="orderaccepted">Accept order</label><br>
+    <input type="radio" id="orderdelivered{{data.order_id}}" name="orderstatus_{{data.order_id}}" value="order_delivered" >
+     <label for="orderdelivered">Order Delivered</label>
+      <td><button class="btn btn-primary"type="submit">Update</button></td>
+
+      </form>
+</td>
+
+</tr>
+{% endfor %} 
+            </table>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block js %}
+<script>
+var orderids = document.getElementsByClassName("orderid");
+
+o1 = [];
+for(i=0;i<orderids.length;i=i+1){
+    var allorderids = orderids[i].innerHTML;
+    o1.push(allorderids);
+}
+
+    
+    for (let i = 0; i < o1.length; i++) {
+    var value = document.getElementById("ord"+o1[i]).innerHTML;
+    document.getElementById('ord'+o1[i]).innerHTML = '';
+var valuejson = JSON.parse(value);
+
+
+for (item in valuejson){
+    let name = valuejson[item][1];
+    let qty = valuejson[item][0];
+
+    mystr = `<li class="list-group-item d-flex justify-content-between align-items-start">
+      <div class="ms-2 me-auto">
+        <div class="fw-bold">
+          ${name}
+        </div>
+      </div>
+      <span class="badge  rounded-pill">${qty}</span>
+    </li>`;
+    var j = i+1;
+    document.getElementById('qid'+o1[i]).innerHTML = j;
+    $('#ord'+o1[i]).append(mystr);   
+}
+}
+
+</script>
+
+{% endblock %}

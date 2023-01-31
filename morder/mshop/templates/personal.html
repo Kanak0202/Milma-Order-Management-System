@@ -1,0 +1,38 @@
+{% extends 'mshop/basic.html' %}
+
+{% block css %}
+.container{
+    width:100%;
+    margin:0;
+    align-items:center;
+}
+.card{
+    align-items:center;
+    margin-left:600px;
+    margin-top:80px;
+    margin-bottom:80px;
+    box-shadow:  0 0 5px 10px #888888;
+}
+{% endblock %}
+
+{% block body %}
+{% if user.is_authenticated %}
+<div class="container">
+    <div class="card" style="width: 20rem;">
+        
+        {% load static %}
+        
+        <img src="{%static '/mshop/user.png' %}" class="card-img-top" alt="...">
+        <h3 class="card-title">Your details:</h3>
+        <div class="card-body">
+          <h4>{{request.user}}</h4>
+          <h4><span>{{request.user.first_name}}</span><span>&nbsp;{{request.user.last_name}}</span></h4>
+          <h4>{{request.user.email}}</h4>
+          
+          <a href="/mshop" class="btn btn-primary my-3">Back to shop</a>
+        </div>
+      </div>
+</div>
+
+{% endif %}
+{% endblock %}
