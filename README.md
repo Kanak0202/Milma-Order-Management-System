@@ -1,0 +1,2 @@
+# Milma-Order-Management-System
+A system using which the shop can deliver food at any location of IIIT Kottayam which can be used to deliver food to the user thus increasing its reach and sales and helping the users by providing them the convenience of getting food at their current location. This system also aims to digitize the token system that is being used currently by the shop thus minimizing the crowd load at the shop.
