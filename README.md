@@ -1,7 +1,9 @@
 # Milma-Order-Management-System
 A system using which the shop can deliver food at any location of IIIT Kottayam which can be used to deliver food to the user thus increasing its reach and sales and helping the users by providing them the convenience of getting food at their current location. This system also aims to digitize the token system that is being used currently by the shop thus minimizing the crowd load at the shop.
-The  first step will be the signup page which will take user name, password, first name, last name and email as input and after the user fills his details he will be forwarded to the login page.
-In the login page the user will be asked to enter his username and password and if the credentials entered are correct he will get logged into the site and will be able to access its services using his account.
+1. The  first step will be the signup page which will take user name, password, first name, last name and email as input and after the user fills his details he will be forwarded to the login page.
+
+2. In the login page the user will be asked to enter his username and password and if the credentials entered are correct he will get logged into the site and will be able to access its services using his account.
+
 After logging in the user will see the homepage where the products are displayed.
 The user will be able to select the products which he wants to buy by clicking on the add to cart button and will also be able to increase or decrease the quantity of the products.
 After adding products to the cart, in the popover the user will see two buttons, one of checkout and the other of clear cart. By clicking on the clear cart button his cart will be cleared. By clicking on the checkout button the user will be redirected to the checkout page.
