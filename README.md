@@ -1,6 +1,9 @@
 # Milma-Order-Management-System
 A system using which the shop can deliver food at any location of IIIT Kottayam which can be used to deliver food to the user thus increasing its reach and sales and helping the users by providing them the convenience of getting food at their current location. This system also aims to digitize the token system that is being used currently by the shop thus minimizing the crowd load at the shop.
 
+![main](https://user-images.githubusercontent.com/95582926/216761327-79a3dd52-40aa-4fb4-a7b6-052ac284a491.png)
+
+
 # Signup
 
  Signup page takes user name, password, first name, last name and email as input and after the user fills his details he will be forwarded to the login page.
