@@ -41,13 +41,30 @@ A system using which the shop can deliver food at any location of IIIT Kottayam 
    ![trck1](https://user-images.githubusercontent.com/95582926/216760391-03be3969-815a-413b-ab21-ab86de75c3a2.png)
  ![trck2](https://user-images.githubusercontent.com/95582926/216760398-ee70d200-a9eb-48ce-a915-1418a450d9d9.png)
 
+# Admin Side
 
-13. As soon as the user places his order his order will be listed in the current orders of the admin section. The admin section can only be accessed by the people of the shop who are authorized.
+7. As soon as the user places his order his order will be listed in the current orders of the admin section. The admin section can only be accessed by the people of the shop who are authorized.
 
-14. In the current orders section the shopkeeper will have options to accept and deliver the order. As soon as the admin accepts the order in the tracker section the user will now see the order status as “Preparing your order”.
+# Current Orders
 
-15. If the admin selects the order delivered option, in the tracker section the user will now see the order status as “Order has been delivered”.
+8. In the current orders section the shopkeeper will have options to accept and deliver the order. As soon as the admin accepts the order in the tracker section the user will now see the order status as “Preparing your order”.
 
-16. Once the order is delivered, it will get unlisted from the current orders queue.
+![crntOrdaccept](https://user-images.githubusercontent.com/95582926/216760655-c9f08f41-8c14-4b24-983d-8b76fba01bb9.png)
+![accept1](https://user-images.githubusercontent.com/95582926/216760738-7f0f9774-a951-4f77-a523-f7bdb327820c.png)
 
-17. In the admin side there will also be an All orders option in the navbar and by clicking on it all the orders which have been placed till now will be shown.
+
+9. If the admin selects the order delivered option, in the tracker section the user will now see the order status as “Order has been delivered”.
+
+![orddel](https://user-images.githubusercontent.com/95582926/216760827-a91dc7ac-1bd0-4c7f-b4c9-62acdcf78ed0.png)
+![orddelvrd](https://user-images.githubusercontent.com/95582926/216760936-0038cc94-1603-426b-a817-8ff03b8ca064.png)
+
+Once the order is delivered, it will get unlisted from the current orders queue.
+
+![remcrntord](https://user-images.githubusercontent.com/95582926/216760835-f35a670a-59ce-46b3-9ea5-2c3d324feeef.png)
+
+# All orders
+
+10. In the admin side there will also be an All orders option in the navbar and by clicking on it all the orders which have been placed till now will be shown.
+
+![allorders](https://user-images.githubusercontent.com/95582926/216760956-0f5a6ca5-aa7e-4732-a7e8-856314c2c735.png)
+
