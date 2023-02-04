@@ -27,17 +27,20 @@ A system using which the shop can deliver food at any location of IIIT Kottayam 
 
 # Checkout
 
-5. After adding products to the cart, in the popover the user will see two buttons, one of checkout and the other of clear cart. By clicking on the clear cart button his cart will be cleared. By clicking on the checkout button the user will be redirected to the checkout page.
+5. After adding products to the cart, in the popover the user will see two buttons, one of checkout and the other of clear cart. By clicking on the clear cart button his cart will be cleared. By clicking on the checkout button the user will be redirected to the checkout page. In this page the order of the user will be displayed along with the total amount that he needs to pay. The user will enter his details like name, delivery location, hostel, room no and phone no.
 
+![ckout](https://user-images.githubusercontent.com/95582926/216760179-25d1dffb-fbe0-4d2a-acb3-39f64285f07d.png)
 
+ The user will then place his order and will be taken to the payment gateway.
+ 
+ # Tracker
 
-6. In the checkout page the order of the user will be displayed along with the total amount that he needs to pay. The user will enter his details like name, delivery location, hostel, room no and phone no.
+6. Once the payment is successful the user will be assigned and given an order id and using this id he will be able to track his order whether his order has been placed, is being prepared or has been delivered.
+    The user can access the tracker page by clicking on tracker in the navbar. The user will only be able to track the order only if he is logged into his account.
+    
+   ![trck1](https://user-images.githubusercontent.com/95582926/216760391-03be3969-815a-413b-ab21-ab86de75c3a2.png)
+ ![trck2](https://user-images.githubusercontent.com/95582926/216760398-ee70d200-a9eb-48ce-a915-1418a450d9d9.png)
 
-8. The user will then place his order and will be taken to the payment gateway.
-
-9. Once the payment is successful the user will be assigned and given an order id and using this id he will be able to track his order whether his order has been placed, is being prepared or has been delivered.
-
-11. The user can access the tracker page by clicking on tracker in the navbar. In the tracker page the user will be able to track his order by filling in his order id and email id. The user will only be able to track the order only if he is logged into his account.
 
 13. As soon as the user places his order his order will be listed in the current orders of the admin section. The admin section can only be accessed by the people of the shop who are authorized.
 
